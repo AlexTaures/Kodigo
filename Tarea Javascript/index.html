@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Tarea JS
+    </title>
+</head>
+<body style="background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );margin-top: 40px;">
+    
+    <style type="text/css">
+      h4{
+        color:blue;
+      }
+    </style>
+
+    <h1 style="text-align: center; color:white">TAREA JAVASCRIPT</h1>  
+
+    <!--acodrdion-->
+    <div class="accordion" id="accordionExample" style="margin-left: 40px;margin-right: 40px; margin-top: 50px; padding-bottom: 500px;">
+      <!--Ejercicio 1-->
+      <div class="accordion-item bg-white" style="--bs-bg-opacity: .5;">
+        <h2 class="accordion-header" id="headingone">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h3>Ejercicio #1</h3>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingone" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!--Ejercicio 1-->
+    <div class="ejercicio1">
+      <h3>1. Realiza un programa que a partir de los valores constantes, ancho=4 y alto=7, calcule el área de un rectángulo.</h3>
+      <div style="display:grid;grid-template-columns:2; text-align: center; width:0; margin-left: 40%;margin-right: 30%;"> <!--Es para el area donde se dibuja el rectangulo-->
+          <p id="ancho" style="grid-column:1;grid-row:1; padding-bottom: 2px; text-align: center; margin:5px;border-bottom: 5px solid;width: 300px;">ancho</p>
+          <div id="rectangulo" style="grid-column:1;grid-row:2;width:300px;height:300px;background-color:red;"></div>
+          <p id="alto" style="grid-column:2;grid-row:2; height: 300px; width:15px;border-left: 5px solid;margin:0;display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;padding-left: 3px;">Alto</p>
+      </div>
+      <button id="button1" onclick="arearect()" class="btn btn-info">Mostrar Resultado</button>
+      <h4 id="resultado1"></h4>
+  </div>
+            
+
+          </div>
+        </div>
+      </div>
+       <!--Ejercicio 2-->
+      <div class="accordion-item bg-white" style="--bs-bg-opacity: .5;">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h3>Ejercicio #2</h3>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+                      <!--Ejercicio 2-->
+              <div class="ejercicio2">
+                <h3>2. Hacer un conversor de euros a dólares. Tendremos una constante llamada euros en la que el valor estará inicializado con valor 7. </h3>
+
+                <button id="button2" onclick="conversor()" class="btn btn-info">Mostrar Resultado</button>
+                <h4 id="resultado2"></h4>
+
+              </div>
+            
+
+          </div>
+        </div>
+      </div>
+       <!--Ejercicio 3-->
+      <div class="accordion-item bg-white" style="--bs-bg-opacity: .5;">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h3>Ejercicio #3</h3>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+                   <!--Ejercicio 3-->
+                <div class="ejercicio3">
+                  <h3>3. El IVA para ciertos artículos es del 21%. Realiza un programa que a partir de una constante precio inicializada con valor 100, calcule el precio con IVA.</h3>
+                  <button id="button3" onclick="iva()" class="btn btn-info">Mostrar Resultado</button>
+                  <h4 id="resultado3"></h4>
+              </div>
+            
+
+          </div>
+        </div>
+      </div>
+       <!--Ejercicio 4-->
+      <div class="accordion-item bg-white" style="--bs-bg-opacity: .5;">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h3>Ejercicio #4</h3>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             <!--Ejercicio 4-->
+                  <div class="ejercicio4">
+                    <h3>4. Asigna 2 variables numéricas y realiza una calculadora la cual con esas dos variables, realice las operaciones de: Suma, resta, multiplicación y división. (ver resultado en consola)</h3>
+
+                    <div style="display: inline-blocks ;">
+                        <label>Ingrese primer numero </label>
+                        <input type="number" id="numero1">
+                        <label>&nbsp Ingrese el segundo numero </label>
+                        <input type="number" id="numero2">
+
+
+                    </div>
+
+                    <button id="button4" onclick="operaciones()" class="btn btn-info">Mostrar Resultado</button>
+                    <h4 id="resultado4"></h4>
+                </div>
+            
+
+          </div>
+        </div>
+      </div>
+       <!--Ejercicio 5-->
+      <div class="accordion-item bg-white" style="--bs-bg-opacity: .5;">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <h3>Ejercicio #5</h3>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            
+             <!--Ejercicio 5-->
+                <div class="ejercicio5">
+                  <h3>5. Calcula el área de un círculo y muestra el resultado.</h3>
+                
+                
+                <div style='position: relative;margin:auto;width: 300px;height: 300px;'>
+                      <div class="Dcirculo" style="grid-column: 1/2;grid-row: 1/2; border-radius: 50%; width: 300px;height: 300px;background-color:red ;"></div>
+                      <div id="Dradio" style="position: absolute;top:125px;right: 0px;width: 150px;border-bottom:3px solid;text-align: center;color: white;">Radio</div>
+                </div>   
+                
+                  <div style="display: inline-blocks; margin-left: 40px;">
+                      <label>Ingrese el radio del circulo</label>
+                      <input type="number" id="radio">
+                  </div>
+                  <br>
+
+                  <button id="button5" onclick="areacir()" class="btn btn-info">Mostrar Resultado</button>
+                  <h4 id="resultado5"></h4>
+              </div>
+
+          </div>
+        </div>
+      </div>
+       <!--Ejercicio 6-->
+      <div class="accordion-item bg-white" style="--bs-bg-opacity: .5;">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <h3>Ejercicio #6</h3>
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+             <!--Ejercicio 6-->
+    <div class="ejercicio6">
+      <h3>6. Dadas las variables, nombre, apellido, edad y curso. Imprime en formato:
+      Mi nombre es {nombre completo}.
+      Tengo {años} años.
+      Me encuentro en el curso de {curso}.</h3>
+      
+      <h4>Ingrese los datos</h4>
+      <div style="display:grid; grid-template-columns: 2;grid-template-rows: 4;margin-left:40px;width: 400px;">
+          <label style="grid-column:1;grid-row: 1;">Nombre:</label>
+          <input type="text" id="nombre" style="grid-column:2;grid-row: 1;">
+          <label style="grid-column:1;grid-row: 2;">Apellido:</label>
+          <input type="text" id="apellido" style="grid-column:2;grid-row: 2;">
+          <label style="grid-column:1;grid-row: 3;">Edad:</label>
+          <input type="number" id="edad" style="grid-column:2;grid-row: 3;">
+          <label style="grid-column:1;grid-row: 4;">Curso:</label>
+          <input type="text" id="curso" style="grid-column:2;grid-row: 4;">
+      </div>
+      <br>
+
+
+
+      <button id="button6" onclick="imprimir()" class="btn btn-info">Mostrar Resultado</button>
+      <h4 id="resultado6a"></h4>
+      <h4 id="resultado6b"></h4>
+      <h4 id="resultado6c"></h4>
+  </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+</body>
+<footer style="position:relative; bottom:0; text-align: center;color:white;"><p>&copy Oscar Alexander Taures Diaz -- Kodigo.org</p>
+</footer>
+</html>
